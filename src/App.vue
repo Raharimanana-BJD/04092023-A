@@ -1,16 +1,15 @@
 <template>
   <div class="app">
-    <HeaderPage />
-    <MainPage/>
-    <FooterPage/>
+    <FadeInOnScroll :delay="0.5" />
+    <!-- <Home /> -->
   </div>
 </template>
 <script>
-import FooterPage from "./components/FooterPage.vue";
-import HeaderPage from "./components/HeaderPage.vue";
-import MainPage from "./components/MainPage.vue";
+import FadeInOnScroll from './page/FadeInOnScroll.vue';
+import Home from './page/Home.vue';
+
 export default {
-  name: "header",
-  components: { HeaderPage, MainPage, FooterPage },
+  name: 'header',
+  components: { Home, FadeInOnScroll },
 };
 </script>
